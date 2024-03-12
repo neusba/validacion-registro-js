@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de registros en JavaScript</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div id="overlay"></div>
+    
+    <form action="action_page.php" method="POST">
+        <h3>Formulario de registro</h3>
+        
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <p id="error" style="display: none;">Mensaje error</p>
+        <input type="password" name="passwordR" id="passwordR" placeholder="Repeat password">
+        <input required type="text" name="cp" id="cp" placeholder="CP">
+
+        <button id="sendButton">Send</button>
+    </form>
+</body>
+<script src="js/script.js"></script>
+</html>
